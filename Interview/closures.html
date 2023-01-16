@@ -1,0 +1,84 @@
+<!-- thiS iS DOCTYPE<!DOCTYPE html>code  -->
+<html lang="en">
+<head>    <here--! our heAD TAG tart here-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut</title>
+ 
+</head>
+<body>
+<div class="container">
+    
+   <h1>Closures</h1>
+
+</div>
+</body>
+<script>
+console.log('closures practice')
+
+// lexical scope //
+var name='Javascript'; // global scope //
+function closure(){
+    //local or inner scope //
+    console.log(name)
+    var x='inside'
+}
+closure();
+// console.log(x)//      // here it gives error //
+
+// closures//
+var outer=22;
+function c(){
+    var a=90;
+    function d(num){
+        var b=80;
+        console.log(a,num,b,outer);
+    }
+    return d;
+     console.log(b)
+}
+c()(11);
+
+// imp. que. //
+let count =0;
+function printCount(){
+    if (count ===0){
+        let count =1; // shadowing - bcz inside of block scope 
+        console.log(count);
+    }
+    console.log(count);
+}
+printCount();
+
+function base(out){
+   return function(inn){
+    console.log(out+inn)
+   }
+}
+var addSix=base(6)
+addSix(10);//16
+addSix(20);//26
+
+let view;
+function load(){
+    view='coading';
+    console.log(view)
+}
+load();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

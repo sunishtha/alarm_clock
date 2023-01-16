@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+}
+.nav{
+    font-size: 12px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+   
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+    margin: 15px;
+    margin-right: 70px;
+   
+}
+
+nav a:hover{
+    color: white;
+    background-color: rgb(119, 7, 7);
+}
+nav img{
+    height: 40px;
+    padding-top: 15px;
+}
+.Backgroundimg{
+    width: 180vmin;
+    height: 55vmin;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.imgContainer img{
+    height: 280px;
+    width: 260px;
+    margin-bottom: 5px;
+    margin: 3px;
+    border: 2px double black;
+    align-items: center;
+ 
+}
+.Slideimg img:hover{
+     box-shadow: floralwhite;
+}
+.imgContainer{
+    height: 200px;
+    width: 800px;
+    margin-left: 90px;
+    margin-top: -200px;
+    background-color: white;
+    display: flex;
+}
+.slideimg {
+    display: flex;
+   
+}
+.navigation-manual{
+  position: absolute;
+  margin-top: -10px;
+  display: flex;
+  width: 1000px;
+  justify-content: center;
+}
+.btn{
+    height: 50px;
+    width: 250px;
+    color: white;
+    background-color: black;
+    border-style: none;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 55px;
+    cursor: pointer;
+}
+.btn:hover{
+   color: rgb(109, 5, 5);
+   background-color: white;
+   font-size: large;
+}
+.details{
+    text-align: center;
+   margin-top: 90px;
+}
+.details .span1{
+    text-decoration: line-through;
+}
+.details .span2{
+    color: rgb(34, 226, 34);
+}
+.details p{
+    padding-top: 30px;
+}
+.features{
+    /* display: flex; */
+    margin :10px;
+    border: 2px solid black;
+    border-radius: 35px;
+    height: 200px;
+}
+.digitalcarddetails h2{
+ text-align: center;
+ padding-top: 20px;
+}
+
+.features{
+     display: flex;
+     font-size: 18px;
+     text-overflow: ellipsis;
+     text-align: center;
+}
+.feature1{
+   
+    margin: 10px;
+    height: 150px;
+    width: 300px;
+    
+}.feature2{
+    
+    margin: 10px;
+    height: 150px;
+    width: 300px;
+}.feature3{
+   
+    height: 150px;
+    margin: 10px;
+    width: 300px;
+}
+.f1{
+    text-align: center;
+    margin-top: 20px;
+}
+.slideimg{
+    animation-duration: 5s;
+    opacity: 1;
+}
+@-webkit-keyframes slideimg{
+   from {
+       opacity: .4;
+   }
+   to{
+ opacity: 1;
+   }
+}
+@keyframes slideimg{
+    from {
+        opacity: .4;
+    }
+    to{
+  opacity: 1;
+    }
+}
+@media only screen and (max-width: 200px){
+    .nav img{
+        display: none;
+    }
+}
+

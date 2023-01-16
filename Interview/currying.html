@@ -1,0 +1,71 @@
+<!-- thiS iS DOCTYPE<!DOCTYPE html>code  -->
+<html lang="en">
+<head>    <here--! our heAD TAG tart here-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut</title>
+ 
+</head>
+<body>
+<div class="container">
+    
+   <h1>Currying</h1>
+
+</div>
+</body>
+<script>
+console.log('currying');
+
+// currying syntax //
+function f(a){
+    return function(b){
+        return function (c){
+            console.log(a,b,c);
+            console.log(a+b+c);
+
+        }
+    }
+}
+f(1)(2)(3);
+
+// why should we use currying ? //
+// - it helps to passing same variable again and again .
+// - it divides your func. into multiple smaller func. that can handle one responsibility //
+
+function x(one){
+    return function(two){
+        return function(three){
+            if (one==='sum')return two+three;
+            if (one==='subtr')return two-three;
+            if (one==='mult')return two*three;
+
+        }
+    }
+}
+console.log(x('sum')(6)(7));
+console.log(x('subtr')(6)(7));
+console.log(x('mult')(6)(7));
+
+// infinite currying // sum(1)(2)(3).....(n)
+function add(q){
+    return function (r){
+        if(r)return add(q+r);
+        return q;
+    }
+}
+console.log(add(1)(2)(3)(4)(5)());
+// kuki yha bar bar func. call hoga to phle r=5 tb run hoga phr r=6  tbh bhi and so on..
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</html>

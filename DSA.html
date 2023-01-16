@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <here--! our heAD TAG tart here-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>New</title>
+</head>
+
+<body>
+</body>
+<script>
+
+   
+
+// 1.input [-8,-6,-4,-3,2,5,8];
+// output[-8,8]
+function sumZero(num){
+    for(let i of num){
+        for(let j=1; j<num.length; j++){
+            if(i + num[i] === 0){
+                return [i,num[j]];
+            }
+        }
+    }
+    
+}
+let x = sumZero([-5,-4,-3,-2,0,2,6]);
+console.log(x);
+
+//2. Anagram
+function anagram(str1,str2){
+  if(str1.length !== str2.length){
+    return false;
+  }
+  let counter={};
+  for(let letter of str1){
+      counter[letter]=(counter[letter] || 0)+1;
+      console.log(counter[letter]);
+    }
+  console.log(counter);
+  for(let item of str2){
+    if(!counter[item]){
+      return false;
+    }
+    counter[item]-=1;
+  }
+  return true;
+}
+let result=anagram('hello','llohe');
+console.log(result);
+
+// 3. Transverse 
+function transverse(num12){
+  for(let x in num12){
+    console.log('array of',x,'is',num12[x])
+  }
+  
+}
+transverse([1,2,34,3,5,15]);
+
+// 4 . insert element 
+// input=[20,70,50,60,90];
+// output=[20,70,100,60,90];
+
+let data=[20,70,50,60,90];
+let insertEl=100;
+let position=2;
+
+for(let i=data.length-1;i>=0;i--){
+  console.log(data);
+if(i>=position){
+    data[i+1]=data[i];// yha position bn jygi
+    if(i==position){
+      data[i]=insertEl;
+    } 
+}
+
+}
+
+
+
+
+
+
+
+
+ </script>
+</html>

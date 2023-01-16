@@ -1,0 +1,117 @@
+<!-- thiS iS DOCTYPE<!DOCTYPE html>code  -->
+<html lang="en">
+<head>    <here--! our heAD TAG tart here-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut3</title>
+ 
+</head>
+<body>
+<div class="container">
+<h1>Functions</h1>
+
+
+</div>
+</body>
+
+<script>
+console.log('functions practice');
+
+// IIFE... inside paranthesis //
+(
+    function Iife(i){
+       console.log( i+i);
+    }
+)(70);
+
+
+(
+    function fun(f){
+      return ( function fun1(g){
+            console.log(f,g)
+        })(7);
+})(9);
+
+
+// function scope //
+var num1=20;
+var num2=30;
+var name='Max';
+
+function x(){
+    var num1=5;
+    var num2=2;
+    function y(){
+        console.log(num1* num2 + ' '+name)
+    }
+    return y();
+}
+x();
+
+
+// for (let z=0;z<5;z++ ){
+//     setTimeout(() => {
+//         console.log(z)
+//     }, z*1000);
+// }
+// { z=0 }
+// { z=1 }
+// { z=2 }
+// { z=3 }
+// { z=4 }
+// { z=5}
+
+
+// for (var time=0;time<5;time++ ){
+//     setTimeout(() => {
+//         console.log(time)
+//     }, time*2000);
+// }
+     //5  //[0,1,2,3 ye var show ni hoga kuki func. scope hai ]
+     //5
+     //5
+     //5
+     //5
+
+
+// function hoisting //
+host()
+function host(){
+    console.log(h)
+    var h=8;
+    console.log('hosting');
+}
+
+// IMP QUE //
+var output1=1;
+var result = function (){
+    console.log(output1);
+   var output1 =9;
+}
+result();
+
+// spread vs rest operators //
+function mult(...part){ // rest opr. //
+    console.log(part)
+}
+var arr=[6,7,8];
+mult(...arr); // spread opr. //
+
+// callback function -- eg: eventlistners, map,filter, reduce,settimeout ,etc //
+
+// arrow function //
+var arrow =()=>console.log('arrow function')
+arrow();
+
+// arrow vs regular funtion //
+// 1. syntax 
+// 2 . return 
+// 3 . argument
+// 4 . "this" keyword  IMP 
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+.logo img{
+    height: 80px;
+    width: 83px;
+    background-color: rgb(186, 250, 250);
+    border-radius: 130px;
+}
+.navbar{
+    display: flex;
+    background-color: rgb(6, 133, 252);
+    height: 60px;
+}
+.nav-list{
+   display: flex;
+   
+   align-items: center;
+}
+.nav-list li  a{
+  text-decoration: none;
+  color: white;
+
+}
+.nav-list li{
+    list-style: none;
+  padding: 30px;
+}
+.rightnav{
+   padding-top: 18px;
+   padding-left: 170px;
+}
+.rightnav input{
+    border-radius: 24px;
+    border: 1px solid rgb(6, 133, 252);
+    
+}
+.rightnav #Search {
+    padding-left: 10px;
+    padding:  4px;   
+}
+.btn-btn-sm{
+    margin-left: 19px;
+    
+}
+  .rightnav .btn-btn-sm{
+    background-color: rgb(255, 137, 1);
+    color: white;
+    border-style: none;
+    padding: 4px;
+    border-radius: 3px;
+    width: 69px;
+}
+.rightnav .btn-btn-sm:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 136, 0);
+}
+.firstHalf img{
+    width: 80vh;
+    height: 70vh;
+    padding-right: 120px;
+    padding-top: 20px;
+}
+.firstHalf .subscribeBtn{
+    background-color: rgb(255, 137, 1);
+    color: white;
+    border-style: none;
+    padding: 4px;
+    border-radius: 3px;
+    width: 69px;
+    margin-top: 9px;
+}
+.firstHalf .subscribeBtn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 136, 0);
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.secondHalf{
+    width: 60vh;
+    height: 50vh; 
+    text-align: center;
+  background-color: rgb(6, 133, 252);
+  border-radius: 3px;
+  box-shadow: cornflowerblue;
+
+}
+.secondHalf h6{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 6px;
+}
+.secondHalf h3{
+    color: white;
+    padding-top: 5px;
+} 
+.secondHalf input{
+    border-radius: 3px;
+    border-style: none;
+    padding: 6px;
+}
+.secondHalf .name{
+    margin-bottom: 13px;
+    margin-top: 7px;
+}
+.secondHalf .phone{
+    margin-bottom: 13px;
+    margin-top: 7px;
+}
+.secondHalf .email{
+    margin-bottom: 13px;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+.secondHalf button{
+    background-color: rgb(255, 137, 1);
+    color: white;
+    border-radius: 3px;
+    border-style: none;
+    padding: 6px;
+    
+}
+.ScheduleBtn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: rgb(255, 136, 0);
+}
+.Topcompanies h1{
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    font-size: xx-large;
+}
+.companies{
+    display: flex;
+    height: 40vh;
+    padding: 30px;
+}
+.companies img{
+    height: 20vh;
+    width: 30vh;
+    padding: 20px;
+    padding-right: 70px;
+}
+.teamMembers{
+    display: flex;
+    height: 42vh;
+    padding: 30px;
+}
+.teamMembers  img{
+    padding:  15px;
+    background-color: rgba(6, 154, 252, 0.445);
+    border-radius: 130px;
+}
+.teamMembers  img:hover{
+    background-color:rgb(6, 133, 252) ;
+    height: 40vh;
+    border-radius: 150px;
+}
+.team{
+    padding: 4px;
+}
+.team h1{
+    color: rgb(6, 133, 252);
+    text-align: center;
+    padding-top: -15px;
+}
+.teamMembers .p1 ,.p2,.p3{
+    color:rgb(6, 133, 252) ;
+  
+}
+.teamMembers p{
+    border: 1px solid rgb(6, 133, 252);
+    font-size: 13px;
+    text-align: right;
+    height: 9vh;
+    border-bottom-right-radius: 19px;
+    border-top-right-radius: 17px;
+    border-top-left-radius: 17px;
+    padding-right: 9px;
+    padding-top: 7px;
+}
+.virtualClassroom h1{
+    text-align: center;
+    padding-bottom: 37px;
+    font-size: 30px;
+    color: rgb(6, 133, 252);
+}
+.carousel ul{
+    display: flex;
+    list-style: none;
+}
+.slide{
+    padding-left: 40px;
+}
+.slide img{
+    width: 80vh;
+    height:50vh;
+    padding: 10px;
+    transition: 5s ease-out;
+}
+.slide img:hover{
+    width: 90vh;
+    height:60vh;
+    background-color:rgb(255, 137, 1) ;
+}
+.last{
+    text-align: center;
+    padding-top: 50px;
+}
+
+@media only screen and (max-width: 200px){
+    .navbar{
+        width: 100px;
+        font-size: 5px;
+    }
+    .backgroound-firstsection{
+        width: 40px;
+    }
+    .firstHalf {
+        width: 50px;
+    }
+    .Topcompanies{
+        display: flex;
+    }
+    .companies{
+        height: 30px;
+       width: 20px;
+    }
+}
+@media only screen and (max-width: 700px){
+    .navbar{
+        width: 100px;
+        font-size: 5px;
+    }
+    .backgroound-firstsection{
+        width: 40px;
+    }
+    .firstHalf {
+        width: 50px;
+    }
+    .Topcompanies{
+        display: flex;
+    }
+    .companies{
+        height: 30px;
+       width: 20px;
+    }
+}

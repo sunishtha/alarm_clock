@@ -1,0 +1,38 @@
+<!-- thiS iS DOCTYPE<!DOCTYPE html>code  -->
+<html lang="en">
+<head>    <here--! our heAD TAG tart here-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut2</title>
+ 
+</head>
+<body>
+<div class="container">
+    
+   <h1>PRACTICE</h1>
+
+
+</div>
+</body>
+<script>
+console.log('another practice');
+
+const name ={
+    fname:'john',
+    lname:'Cena',  
+}
+let func=function(f){
+    console.log(this.fname + ' '+ this.lname+ ' '+ f)
+}
+func.call(name,'delhi');
+func.apply(name,['goa']);// use array here - it takes second aurg. as a array //
+
+let p = func.bind(name,'pune'); // in bind we can invoke it later CALL VS BIND //
+console.log(p);
+p();
+
+
+
+</script>
+</html>

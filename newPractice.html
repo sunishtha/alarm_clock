@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+    <here--! our heAD TAG tart here-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>New</title>
+</head>
+
+<body>
+</body>
+<script>
+
+function sumZero(array){
+  for(let key of array){
+    for(let x=1;x<array.length;x++ ){
+      if(key+array[x] ===0){
+        return [key,array[x]];
+      }
+    }
+  }
+}
+let z=sumZero([-5,-4,-3,-2,0,2,4,6,8])
+console.log(z);
+
+function zero(arr){
+  let left=0;
+  let right=arr.length-1;
+
+  while (left<right) {
+    sum=arr[left]+ arr[right];
+    if(sum===0){
+      return [arr[left],arr[right]]
+    }else if(sum>0){
+      right--;
+    }else{
+     left++
+    } 
+  }
+}
+let a=zero([-5,-4,-3,-2,0,2,4,6,8]);
+console.log(a);
+
+
+
+</script>
+
+</html>

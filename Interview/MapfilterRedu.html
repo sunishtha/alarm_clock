@@ -1,0 +1,87 @@
+<!-- thiS iS DOCTYPE<!DOCTYPE html>code  -->
+<html lang="en">
+<head>    <here--! our heAD TAG tart here-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut</title>
+ 
+</head>
+<body>
+<div class="container">
+    
+   <h1>map filter reduce</h1>
+
+</div>
+</body>
+
+<script>
+console.log('practice here')
+
+let item = [{name:'apple', rate :700,id:96},
+{name:'ball', rate :800,id:57},
+{name:'cat', rate :401,id:80},
+{name:'dogs', rate :560,id:76},];
+
+// add only rate //
+const red= item.reduce((acc,curr)=>{
+    return  acc+ curr.rate ;
+},0);
+console.log(red);
+
+// write in capital //
+const list=item.map((m)=>{
+    return m.name.toLocaleUpperCase();
+})
+console.log(list);
+
+// more than value //
+const moreThan=item.filter((f)=>{
+    return f.id > 60;
+})
+console.log(moreThan);
+
+const diffmoreThan = item.filter((n)=>{
+    return n.rate>500 && n.id>70 ;
+})
+console.log(diffmoreThan);
+
+// complicated que by chaining //
+const compl=item.filter((c)=>{
+      return c.rate >500  ;
+}).map((comp)=>{
+    return comp.name ;
+})
+console.log(compl);
+
+
+// another complicated que //
+// const ano=item.map((a)=>{
+//       if (a.rate < 600){
+//         return a.rate += 20
+//       }
+//       return a;
+// }).filter((a)=>{
+//     return a.rate
+// }).reduce((ac,cu)=>{
+//     return ac+cu.rate;
+// },0)
+
+// console.log(ano)
+
+const foo = () => {
+  var fooString = 'foo';
+  console.log(fooString);
+  const bar = () => {
+    console.log(fooString);
+  }
+  bar();
+}
+foo();
+// console.log(fooString); // it will give undefined //
+
+
+
+
+</script>
+</html>

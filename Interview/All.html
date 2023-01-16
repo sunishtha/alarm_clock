@@ -1,0 +1,454 @@
+<html lang="en">
+<head>    <here--! our heAD TAG tart here-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut2</title>
+ 
+</head>
+<body>
+<div class="container">
+    
+   <h1>PRACTICE</h1>
+
+
+</div>
+</body>
+<script>
+    let z=0;
+ const x=4;
+ for(let i=1;i<=x;i++){
+    console.log(i);
+    z+=i;
+   
+ }
+ console.log(z)
+ 
+ let a=0;
+ let b=50;
+ for(let i=1;i<=b;i++){
+    a+=i;
+ }
+console.log(a)
+
+let l=1,m=7;
+while (l <= m) {
+    // console.log(m);
+    console.log(l);
+
+    l+= 1;
+}
+
+let num=0;
+let sum=6;
+for(let i=1;i<=sum;i++){
+    if(i==3){
+        
+        console.log('three times', i)
+        
+    }
+    console.log(i)
+}
+for (let i = 1; i <= 3; i++) {
+
+// second loop
+for (let j = 1; j <= 3; j++) {
+    if (i == 2) {
+      break;
+    }
+    console.log(`i = ${i}, j = ${j}`);
+}
+}
+// constructor function
+function Person () {
+    this.name = 'John',
+    this.age = 23,
+
+     this.greet = function () {
+        console.log('hello');
+    }
+}
+
+// create objects
+const person1 = new Person();
+const person2 = new Person();
+
+// access properties
+console.log(person1.name);  // John
+console.log(person2.name);  // John
+
+// using object lateral
+let person = {
+    name: 'Sam'
+}
+
+console.log(person.name); // Sam
+
+let student = person;
+
+// changes the property of an object
+student.name = 'John';
+
+// changes the origins object property
+console.log(person.name); // John
+
+let dailyActivities = ['eat', 'sleep'];
+
+// add an element at the end
+dailyActivities.push('exercise');
+
+console.log(dailyActivities); //  ['eat', 'sleep', 'exercise']
+
+let dailyctivities = ['eat', 'sleep'];
+
+//add an element at the start
+dailyctivities.unshift('work'); 
+
+console.log(dailyctivities); // ['work', 'eat', 'sleep']
+
+
+
+let studentsData = [['Jack', 24], ['Sara', 23],];
+
+// looping outer array elements
+for(let i = 0; i < studentsData.length; i++){
+
+    // get the length of the inner array elements
+    let innerArrayLength = studentsData[i].length;
+    
+    // looping inner array elements
+    for(let j = 0; j < innerArrayLength; j++) {
+        console.log(studentsData[i][j]);
+    }
+}
+
+// string is immutable
+let ab = 'hello';
+abb[0] = 'H';
+console.log(ab);
+
+
+const salaries= {
+    Jack : 24000,
+    Paul : 34000,
+    Monica : 55000
+}
+// using for...in
+for ( let i in salaries) {
+    // add a currency symbol
+    let salary = "$" + salaries[i];
+    // display the values
+    console.log(`${i} : ${salary}`);
+}
+
+
+const string = 'code';
+// using for...in loop
+for (let i in string) {
+    console.log(string[i]);
+}
+
+
+
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+}
+const person0 = new Person('John');
+console.log(person0.name);
+
+
+
+function sum(x, y = 5) {
+// take sum
+// the value of y is 5 if not passed
+console.log(x + y);
+}
+sum(5); // 10
+sum(5, 15); // 20
+
+
+// before you would do something like this
+const personA = {
+    name: 'Sara',
+    age: 25,
+    gender: 'female'    
+}
+let name = personA.name;
+let age = personA.age;
+let gender = personA.gender;
+
+console.log(name); // Sara
+console.log(age); // 25
+console.log(gender); // female
+
+
+function show(a, b, ...args) {
+  console.log(a); // one
+  console.log(b); // two
+  console.log(args); // ["three", "four", "five", "six"]
+}
+// rest parameter
+show('one', 'two', 'three', 'four', 'five', 'six')
+
+
+let arr1 = ['one', 'two'];
+let arr2 = [...arr1, 'three', 'four', 'five'];
+console.log(arr2); // spread parameter
+
+
+// pass by ref.
+let ar1 = [ 1, 2, 3];
+let ar2 = ar1;
+console.log(ar1); // [1, 2, 3]
+console.log(ar2); // [1, 2, 3]
+// append an item to the array
+arr1.push(4);
+console.log(ar1); // [1, 2, 3, 4]
+console.log(ar2); // [1, 2, 3, 4]
+
+
+// pass by ref using spread operator does not affect value 
+let arrr1 = [ 1, 2, 3];
+// copy using spread syntax
+let arrr2 = [...arrr1];
+console.log(arrr1); // [1, 2, 3]
+console.log(arrr2); // [1, 2, 3]
+// append an item to the array
+arr1.push(4);
+console.log(arrr1); // [1, 2, 3, 4]
+console.log(arrr2); // [1, 2, 3]
+
+
+//  REST PARAMETER -- When the spread operator is used as a parameter, it is known as the rest parameter.
+let func = function(...args) {
+    console.log(args);
+}
+func(3); // [3]
+func(4, 5, 6); // [4, 5, 6]
+
+
+// ARROW FUNCTION //
+this.name1 = 'Jack',
+    this.age1 = 25,
+    this.sayName = function () {
+        // this is accessible
+        console.log(this.age1);
+        function innerFunc() {
+            // this refers to the global object
+            console.log(this.age);
+            console.log(this);
+        }
+        innerFunc();
+    }
+let ax= new Person();
+ax.sayName();
+
+
+
+// function Person() {
+//     this.name = 'Jack',
+//     this.age = 25,
+//     this.sayName = function () {
+//         console.log(this.age);
+//         let innerFunc = () => {
+//             console.log(this.age);
+//         }
+//         innerFunc();
+//     }
+// }
+// const x = new Person();
+// x.sayName();
+
+
+
+// let person = {
+//     name: 'Jack',
+//     age: 25,
+//     sayName: () => {
+//         // this refers to the global .....
+//         console.log(this.age);
+//     }
+// }
+// person.sayName(); // undefined
+
+
+
+// function sum(x = 1, y = x,  z = x + y) {
+//     console.log( x + y + z );
+// }
+// sum(); // 4
+
+
+
+// using a function in default value expression
+// const sum = () => 15;
+// const calculate = function( x, y = x * sum() ) {
+//     return x + y;
+// }
+// const result = calculate(10);
+// console.log(result);            // 160
+
+
+
+// function test(x = 1) {
+//   console.log(x);
+// }
+// // passing undefined
+// // takes default value 1
+// test(undefined); // 1
+
+
+
+// const person = {
+//     name: 'Sara',
+//     age: 25,
+//     gender: 'female'    
+// }
+// // destructuring assignment
+// // using different variable names
+// let { name: name1, age: age1, gender:gender1 } = person;
+// console.log(name1); // Sara
+// console.log(age1); // 25
+// console.log(gender1); // female
+
+
+
+// const arrValue = ['one', 'two', 'three'];
+// // destructuring assignment in arrays
+// const [x, y, z] = arrValue;
+// console.log(x); // one
+// console.log(y); // two
+// console.log(z); // three
+
+
+
+// let arrValue = [10];
+// // assigning default value 5 and 7
+// let [x = 5,  y = 7] = arrValue;
+// console.log(x); // 10
+// console.log(y); // 7
+
+
+// creating a class
+// class Person {
+//   constructor(name) {
+//     this.name = name;
+//   }
+// }
+// // creating an object
+// const person1 = new Person('John');
+// const person2 = new Person('Jack');
+// console.log(person1.name); // John
+// console.log(person2.name); // Jack
+
+
+// class Person {
+//     constructor(name) {
+//     this.name = name;
+//   }
+//     // defining method
+//     greet() {
+//         console.log(`Hello ${this.name}`);
+//     }
+// }
+// let person1 = new Person('John');
+// // accessing property
+// console.log(person1.name); // John
+// // accessing method
+// person1.greet(); // Hello John
+
+
+// var x = 23;
+// (function(){
+//   var x = 43;
+//   (function random(){
+//     x++;
+//     console.log(x);
+//     var x = 21;
+//   })();
+// })(); 
+// solution
+// function random(){
+//   var x; // x is hoisted
+//   x++; // x is not a number since it is not initialized yet
+//   console.log(x); // Outputs NaN
+//   x = 21; // Initialization of x
+// }
+
+
+// let hero = {
+//     powerLevel: 99,
+//     getPower(){
+//       return this.powerLevel; 
+//     }
+//   }
+//   let getPower = hero.getPower; 
+//   let hero2 = {powerLevel:42};
+//   console.log(getPower()); -----// undefined
+//   console.log(getPower.apply(hero2)); ---------//42
+
+
+// const a = function(){
+//     console.log(this);
+//     const b = {
+//       func1: function(){
+//         console.log(this);
+//       }  
+//     }
+//     const c = {
+//       func2: ()=>{
+//         console.log(this);
+//       }
+//     }
+//     b.func1();
+//     c.func2();
+//   }
+//   a();
+
+
+// const b = {
+//     name:"Vivek",
+//     f: function(){
+//       var self = this;
+//       console.log(this.name);
+//       (function(){
+//         console.log(this.name);
+//         console.log(self.name);
+//       })();
+//     }
+//   }
+//   b.f();
+
+
+
+
+
+// (function(a){
+//   return (function(){
+//     console.log(a);
+//     a = 23;
+//   })()
+// })(45);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    </html>
+    

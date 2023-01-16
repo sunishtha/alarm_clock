@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Todo list</title>
+      <style>
+          *{
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+           
+          }
+         .box{
+             width: 350px;
+             height: 250px;
+             border: 3px  rgb(0, 0, 0);
+             margin-right: 30px;
+            padding-right: 30px;
+            box-sizing: content-box;
+            background-color: rgb(206, 188, 229);
+           
+         }
+         .plus{
+             background-color: rgb(9, 146, 5);
+             color: rgb(4, 77, 7);
+             border-style: none;
+             height: 7%;
+             border-radius: 3px;
+              margin-top: 10px;
+             margin-left: 5px;
+             cursor: pointer;
+         }
+         .clear{
+            background-color: rgb(218, 24, 24);
+             color: rgb(119, 0, 0);
+             border-style: none;
+             height: 7%;
+             border-radius: 3px;
+             cursor: pointer;
+         }
+         .save{
+            background-color: rgba(0, 0, 255, 0.8);
+             color: rgb(6, 30, 82);
+             border-style: none;
+             height: 7%;
+             border-radius: 3px;
+             cursor: pointer;
+         }
+         .clear:hover{
+            color: rgb(255, 255, 255);
+             background-color: rgb(212, 207, 207);
+         }
+         .plus:hover{
+             color: rgb(255, 255, 255);
+             background-color: rgb(212, 207, 207);
+         }
+         .save:hover{
+             color: rgb(255, 255, 255);
+             background-color: rgb(212, 207, 207);}
+         .fieldshet{
+             height: 160px;
+             width: 300px;
+             margin-top: 10px;
+             margin-left: 6px;
+            
+            
+         }
+      </style>
+      <body>
+          <header style="text-align: center;">
+              <h1>Notes</h1>         
+             </header>
+       <div class="box">
+        <b>Add Notes...</b>
+           <fieldset class="fieldshet"></fieldset>
+              
+       
+           
+          <button class="plus">Add</button>
+          
+       </div>
+      <h2>Your Notes</h2>
+      <div>
+         Title : <input>
+         <button class="clear">Delete</button>
+        
+      </div>
+      <div>
+        Title : <input>
+        <button class="clear">Delete</button>
+        
+       </div>
+     
+     
+
+
+
+
+      </body>
+<script src="todolist.js"></script>
+
+      </head>
+      </html>

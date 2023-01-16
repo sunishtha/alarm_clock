@@ -1,0 +1,67 @@
+<html lang="en">
+<head>    <here--! our heAD TAG tart here-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tut2</title>
+ 
+</head>
+<body>
+<div class="container">
+    
+   <h1>PRACTICE</h1>
+
+
+</div>
+</body>
+<script>
+
+let  a=[2,3,4,5];
+let z= function area(a){
+    let x=[];
+    for(let i=0;i<=a.length;i++){
+        x.push(Math.PI *2 * a[i] * a[i])
+    }
+    return x;
+ }
+console.log(z(a));
+
+const new1=[10,20,30,40];
+const func=function(new1){
+    let output=[];
+    for(let i=0;i<=new1.length;i++){
+        output.push(2*new1[i]*new1[i]);
+    }
+    return output;
+}
+console.log(func(new1));
+
+// OR best way to write  code //
+
+const num=[2,3,4,5];
+ const func1=function(num){
+    return Math.PI * 2 * num;
+ }
+ const func2=function(num){
+    return Math.PI * 2 * num*num;
+ }
+
+const calculateCircum= function(num, logic){
+    let input=[];
+    for (let i=0;i<=num.length;i++){
+        input.push(logic(num[i]))
+    }
+    return input;
+}
+console.log(calculateCircum(num,func1))
+console.log(calculateCircum(num,func2))
+
+
+
+
+
+
+
+    </script>
+    </html>
+    

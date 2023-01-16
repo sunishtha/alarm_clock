@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+nav li{
+    list-style: none;
+    
+}
+nav {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 50px;
+    font-size: 25px;
+    align-items: center;
+    padding-left: 17px  ;
+    padding-top:20px ;
+    
+}
+.gameContainer{
+     flex-wrap: wrap;
+     display: flex;
+     margin-top: 40px;
+     justify-content: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows:repeat(3, 10vw) ;
+    font-family: 'Montserrat', sans-serif;
+}
+.box{
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+   color: rgb(0, 0, 0);
+   /* background-color: tan; */
+}
+.imgbox img{
+    height: 190px;
+    width: 0;
+    transition: width 1s ease-in-out;
+}
+.gameInfo{
+    padding: 0 29px;
+    font-size: 20px;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+#reset{
+    margin-top: 30px;
+    margin-left: 40px;
+    padding: 10px 10px 10px 10px;
+    background-color: rgb(230, 4, 4);    
+   color: white;
+   border-style: none;
+   border-radius: 6px;
+   font-size: 17px;
+   cursor: pointer;
+   font-family: 'Montserrat', sans-serif;
+}
+.info{
+    font-size: 27px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 30px;
+    }
+
+}

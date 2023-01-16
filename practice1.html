@@ -1,0 +1,241 @@
+<!-- thiS iS DOCTYPE<!DOCTYPE html>code  -->
+<html lang="en">
+
+<head>
+    <here--! our heAD TAG tart here-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>New</title>
+</head>
+
+<body>
+    <div id="d1">This div</div>
+    <h1 id="d2">well</h1>
+    <!-- <input id="d2" type="text"> -->
+    <ul id="uli">
+        <li class="lii">This</li>
+        <li class="lii">is</li>
+        <li class="lii">New</li>
+        <li class="lii">list</li>
+
+    </ul>
+
+</body>
+
+<script>
+    console.log("PRACTICE");
+   
+
+// var x=[];
+
+// function factor(num){
+//     for(i=1; i<=num ;i++){
+//         x.push(i);
+//     }
+//    return x.reduce((a,b)=>{
+//         return a*b;
+//     })
+// }
+// console.log(factor(5));
+
+//////////////////////////////////////////////////
+
+// function palidrome(nam){
+//     var rev=nam.split('').reverse().join('');
+//     if(rev === nam) return true;
+
+
+//       return false;
+// }
+
+// console.log(palidrome("cococ"))  ;
+
+/////////////////////////////////////////////////
+
+
+
+var alpha= ['mango','banana','pineapple','cherry'];
+
+ var x= alpha.reduce((acc,curr)=>{
+   if(acc.length > curr.length) return acc;
+
+   return curr;
+},0)
+
+console.log(x);
+// largest no. length  //
+///////////////////////////////////////////////////////
+
+var x=[4,7,9,5,4,7,2,9,52,57,5,62];
+
+var l= x.map(function (m){
+    if(m %2 ===0)return m;
+    return m="odd";
+})
+ console.log(l);
+
+ /////////////////////////////////////////////////////
+/////////////////////////////////////////////////////
+ let p=0;   //
+const z=9;    //
+ function f(){    //
+     return p+8 ;     //
+ }                    //
+console.log(f())   //
+                //
+ //////////////
+ let count = 0;
+(function immediate() {
+  if (count === 0) {
+    let count = 1;
+    console.log(count); // What is logged?
+  }
+  console.log(count); // What is logged?
+})();
+///////////////////////////////////////////////
+console.log('new')
+
+var newnum=[[4,6,7], [78,99], [7977,699], [9,8765]];
+
+//largest inside each array ?
+function func1(){
+  setTimeout(()=>{
+    console.log(x);
+    console.log(y);
+  },3000);
+
+  var x = 2;
+  const y = 12;
+}
+func1();
+
+var x = 23;
+
+(function(){
+  var x = 43;
+  (function random(){
+    x++;
+    console.log(x);
+    var x = 21;
+  })();
+})();
+
+
+// console.log(" I ".repeat(8))
+
+///////////////////////////////////////////////////
+
+
+
+const arr = [ {id: 1, name: 'qwerty',age:40}, {id: 2, name: 'asdfg',age:76}, {id: 3, name: 'zxcvb',age:40} ];
+
+ var Arr2=arr.map(function (f2){
+        if(f2.age===40) {
+          return {...f2,age:9990}
+        }
+        return f2;
+ })
+console.log(Arr2);
+
+let favNum=[
+          {veg:"brinjal",rate:70},
+          {veg:"capsicum",rate:90},
+          {veg:"arum",rate:80},
+]
+var veggie=favNum.reduce(function(acc1,curr1){
+        return  curr1.rate+ curr1.rate+curr1.rate;
+        
+           
+},{})
+console.log(veggie);
+
+
+////
+
+(function (){
+  var variab="Heloooooooooo"
+  console.log(variab);
+})();
+
+/////-------------------    IIFE    --------------------/////
+
+let ccc=()=>{
+  ({
+    name:"apple",
+    $:5
+  })
+};
+console.log(ccc())
+// exception in js it is imp. to use paranthesis while returning the obj. in arrow function //
+
+// pass by refference --- only in case of array and obj. //
+var newObj={car:'audi',rupee:4500000}
+var newObj2=newObj;
+console.log(newObj)
+newObj.car='porche'
+// newObj2.car='benz'
+console.log(newObj2);
+
+
+var newArr=[6,4,3,3,4];
+var newArr2=newArr;
+console.log(newArr);
+newArr.push(100);
+console.log(newArr);
+newArr2.unshift(80)
+console.log(newArr2);
+console.log(newArr);
+/////////////////////////////////////////////////////////////
+
+
+// pass by value //
+var newStr="editable";
+var newStr2=newStr;
+newStr="not"
+newStr2="neww"
+console.log(newStr2)
+console.log(newStr)
+////////////////////////////////////////////////////////////////
+
+// rest operator  //
+var param=[4,8,9,7,6];
+var param2=[200,400,...param];
+console.log(param2);
+//  spread operator //
+var param3=[...param,111];
+console.log(param3);
+/////////////////////////////////////////////
+
+
+
+fetch("fetch_info.txt")
+.then( (res)=>console.log(res)
+).catch((err)=> console.log(err));
+
+fetch("fetch_info.txt").then((res)=>{
+  if(true){
+    console.log('success')
+  }
+  else{
+    console.log("not")
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

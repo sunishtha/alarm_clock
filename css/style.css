@@ -1,0 +1,189 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* CSS Variables  */
+:root{
+    --navbar-height :59px ;
+
+} 
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+  position: absolute;
+  top: 0px;
+}
+/* Navigation Bar : Logo and Image  */
+#logo{
+     margin: 10px 15px;
+}
+#logo img {
+    height: 30px;
+}
+/* Navigation Bar :List Styling  */
+ #navbar ul{
+    display: flex;
+}
+    
+
+#navbar::before{ 
+        content: "";
+        background-color: rgb(49, 47, 47);
+       position: absolute;
+        height: 200%;
+        width: 1215px;
+        z-index: -1;
+        opacity: .6;
+}
+#navbar ul li{
+    color: white;
+    list-style: none;
+    font-size: 1.1rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+#navbar ul li a{
+    padding: 3px 22px;
+    display: block;
+    border-radius: 15px;
+    text-decoration: none;
+    color: white;
+    
+}
+ #navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    }
+/* Home Section  */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 100px;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+}
+#home::before {
+         content: "";
+        background: url('../bggg.jpg') no-repeat center center/cover;
+        position:absolute;
+        opacity: 1;
+        height: 145%;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.9;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* Utility class  */
+.h-primary {
+    font-size: 3.9rem;
+    padding: 13px;
+
+}
+.h-secondary-services{
+    font-size: 2.9rem;
+    padding: 13px;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.btn {
+    padding: 7px 21px;
+    border: 2px solid white;
+    background-color: brown;
+    margin: 16px ;
+    font-size: 1.5rem;
+    border-radius: 9px;
+    color: white;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+/* services */
+ #services{
+     margin: 19px;
+     display: flex;
+     
+ }
+  .box{
+   border: 1px solid rgb(5, 4, 4);
+   padding: 45px;
+   text-align: center;
+   margin: 5px;
+  border-radius: 14px;
+   font-size: 0.9rem;
+   background-color: rgba(250, 248, 242, 0.897);
+   height: 290px;
+   font-family: 'Nunito Sans', sans-serif;
+   padding-top: 7px;
+}
+ .box .img {
+    height: 20px
+    
+ }
+ .box img{
+     position:static;
+     display: block;
+     height: 150px;
+     padding-left: 68px;
+ }
+ .box p{
+     font-size: .8rem;
+     padding: 2px;
+ }
+ /* client section  */
+
+#clientsection {
+    height: 60px;
+    font-size: 1.8rem;
+    
+}
+#clientsection::before{
+    content: "";
+    position: absolute;
+    background: url('../cli1.jpg');
+    width: 100%;
+   height: 240px;
+   z-index: -1;
+   opacity: .7;
+ }
+ .h-client  {
+     text-align: center;
+     font-family: 'Nunito Sans', sans-serif;
+ }
+ .div-clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ }
+ .div-clients img{
+      height: 100px;
+      padding: 20px;
+ }
+ /* contact */
+ #contac{
+    content: "";
+    position: absolute;
+    background: url('../');
+    width: 100%;
+   height: 260px;
+   z-index: -1;
+   opacity: .7;
+     
+ }
+ .Hcontact{
+     font-size: 1.5rem;
+ }
